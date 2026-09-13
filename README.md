@@ -40,7 +40,7 @@
    - Producer-Consumer problem
    - Process synchronization
 
-1. 🖥️ Bash Command
+## 1. 🖥️ Bash Command
 
 **📂 Directory Navigation**
 
