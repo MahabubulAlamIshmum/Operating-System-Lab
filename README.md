@@ -97,6 +97,7 @@ cat -s      To reduce multiple blank lines.
 cat -sn     To display line numbers and squeeze blank lines.
 cat -E      To show the end of each line.
 nano        To create or edit a file using a terminal-based text editor.
+echo        To display text or variable values.
 
 🔢 Counting
 
@@ -159,3 +160,15 @@ history >> file     To append command history to a file.
 
 Command     Uses
 man         To display the manual/help page of a command.
+
+👤 User & System Information
+
+Command                Uses
+sort                   To sort lines of text.
+whoami                 To show the current username.
+which                  To show the path of a command.
+who                    To show currently logged-in users.
+date                   To display the current date and time.
+>                      To write output to a file and overwrite existing content.
+>>                     To append output to the end of a file.
+./script_File_Name.sh  To running the executable script directly
