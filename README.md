@@ -1,7 +1,7 @@
 # Operating-System-Lab
 ## 📋 Topics Covered
 
-1. [🖥️ Bash Command](#1-🖥️-Bash-Command)
+1. [🖥️ Bash Command](#1-bash-command)
    - Basic Linux commands
    - File and directory management
    - File permissions
@@ -40,11 +40,10 @@
    - Producer-Consumer problem
    - Process synchronization
 
+
+
+
 ## 1. 🖥️ Bash Command
-
-**📂 Directory Navigation**
-
-## 1. Bash Command
 
 ```Bash
 Command     Uses
@@ -172,3 +171,13 @@ date                   To display the current date and time.
 >                      To write output to a file and overwrite existing content.
 >>                     To append output to the end of a file.
 ./script_File_Name.sh  To running the executable script directly
+
+⬇️ Software Install
+
+cd Downloads/
+ls
+sudo apt install ./Installed_file_name.deb OR sudo dpkg -i ./Installed_file_name.deb 
+Password Enter
+Y Enter 
+
+
