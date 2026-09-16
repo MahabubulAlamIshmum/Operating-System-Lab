@@ -1,7 +1,7 @@
 # Operating-System-Lab
 ## 📋 Topics Covered
 
-1. [🖥️ Bash Command](#1-bash-command)
+1. **🖥️ Bash Command**
    - Basic Linux commands
    - File and directory management
    - File permissions
@@ -45,7 +45,7 @@
 
 ## 1. 🖥️ Bash Command
 
-```Bash
+```text
 Command     Uses
 pwd         To see the present directory path.
 ls          To see files and folders in the current directory.
@@ -98,6 +98,20 @@ cat -E      To show the end of each line.
 nano        To create or edit a file using a terminal-based text editor.
 echo        To display text or variable values.
 
+🔝 Head & Tail
+
+Command     Uses
+head        To display the beginning of a file.
+head -n     To display a specific number of lines from the beginning.
+head -c     To display a specific number of characters or bytes from the beginning.
+tail        To display the end of a file.
+tail -n     To display a specific number of lines from the end.
+tail -f     To continuously display new content added to a file.
+|           To send the output of one command as input to another command.
+
+Example:
+head -3 file.txt | tail -1
+
 🔢 Counting
 
 Command     Uses
@@ -119,22 +133,21 @@ grep -r       To search recursively inside directories.
 grep -E       To search using Extended Regular Expressions.
 grep -oE      To display only the matched parts using Extended Regular Expressions.
 
-🔝 Head & Tail
-
-Command     Uses
-head        To display the beginning of a file.
-head -n     To display a specific number of lines from the beginning.
-head -c     To display a specific number of characters or bytes from the beginning.
-tail        To display the end of a file.
-tail -n     To display a specific number of lines from the end.
-tail -f     To continuously display new content added to a file.
-
 🔍 Find
 
 Command         Uses
 find            To search for files and directories.
 find -name      To search for a file or folder by name.
 find -type d    To search only for directories.
+
+🔤 Sorting
+
+Command             Uses
+sort file.txt       Alphabetical order (A - Z)
+sort -r file.txt    Reverse order (Z - A)
+sort -n file.txt    Number wise ascending
+sort -nr file.txt   Number wise descending
+sort -u file.txt    Sort and remove duplicate lines
 
 🔐 File Permissions
 
@@ -155,29 +168,53 @@ history             To display previously executed commands.
 history > file      To save command history into a file.
 history >> file     To append command history to a file.
 
-📚 Manual
-
-Command     Uses
-man         To display the manual/help page of a command.
-
 👤 User & System Information
 
 Command                Uses
-sort                   To sort lines of text.
 whoami                 To show the current username.
 which                  To show the path of a command.
 who                    To show currently logged-in users.
 date                   To display the current date and time.
 >                      To write output to a file and overwrite existing content.
 >>                     To append output to the end of a file.
-./script_File_Name.sh  To running the executable script directly
+./script_File_Name.sh  To run the executable script directly
+
+📚 Manual
+
+Command     Uses
+man         To display the manual/help page of a command.
+
+📌 Permission Reference
+Permission    Meaning
+r             Read
+w             Write
+x             Execute
+
+4             Read
+2             Write
+1             Execute
+
+7             rwx
+6             rw-
+5             r-x
+4             r--
+3             -wx
+2             -w-
+1             --x
+0             ---
+
+666           rw-rw-rw-
+777           rwxrwxrwx
 
 ⬇️ Software Install
 
 cd Downloads/
 ls
-sudo apt install ./Installed_file_name.deb OR sudo dpkg -i ./Installed_file_name.deb 
+sudo apt install ./Installed_file_name.deb
+OR
+sudo dpkg -i ./Installed_file_name.deb
+
 Password Enter
 Y Enter 
 
-
+```
